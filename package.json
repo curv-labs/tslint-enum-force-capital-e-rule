@@ -1,10 +1,11 @@
 {
   "name": "tslint-enum-value-name-rule",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "TSLint rule to enforce PascalCasing in enum values",
   "main": "src/index.json",
   "files": [
-    "./src/**/*"
+    "src/index.json",
+    "src/enumValueNameRule.js"
   ],
   "keywords": [
     "typescript",
@@ -15,10 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "lodash.camelcase": "^4.3.0",
-    "lodash.upperfirst": "^4.3.1"
-  },
-  "peerDependencies": {
-    "tslint": "^5.18.0"
+    "lodash.upperfirst": "^4.3.1",
+    "tslint": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^12.6.2",
