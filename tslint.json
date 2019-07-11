@@ -1,0 +1,9 @@
+{
+  "rulesDirectory": ["./src"],
+  "linterOptions": {
+    "exclude": ["./src/enumValueNameRule.ts"]
+  },
+  "rules": {
+    "enum-value-name": "true"
+  }
+}
