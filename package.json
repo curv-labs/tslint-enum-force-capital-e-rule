@@ -12,6 +12,10 @@
     "tslint",
     "config"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DCzajkowski/tslint-enum-value-name-rule.git"
+  },
   "author": "Dariusz Czajkowski",
   "license": "MIT",
   "dependencies": {
