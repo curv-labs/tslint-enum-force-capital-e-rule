@@ -1,6 +1,6 @@
 {
   "name": "tslint-enum-value-name-rule",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "TSLint rule to enforce PascalCasing in enum values",
   "main": "src/index.json",
   "files": [
