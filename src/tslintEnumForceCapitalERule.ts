@@ -1,28 +1,29 @@
 import * as Lint from 'tslint';
 import * as ts from 'typescript';
-import camelCase from 'lodash.camelcase';
-import upperFirst from 'lodash.upperfirst';
 
-class EnumValueNameWalker extends Lint.RuleWalker {
-  public visitEnumMember(node: ts.EnumMember) {
+class EnumNameWalker extends Lint.RuleWalker {
+  public visitEnumDeclaration(node: ts.EnumDeclaration) {
+
     const actual = (<any>node.name).escapedText;
-    const expected = upperFirst(camelCase(actual));
 
-    if (actual !== expected) {
+    if (!actual.startsWith('E')) {
+
+      const expected = "E" + actual;
+
       const failure = this.createFailure(node.getStart(), node.getWidth(), Rule.FAILURE_STRING(expected, actual));
 
       this.addFailure(failure);
     }
 
-    super.visitEnumMember(node);
+    super.visitEnumDeclaration(node);
   }
 }
 
 export class Rule extends Lint.Rules.AbstractRule {
   public static FAILURE_STRING = (expected: string, actual: string) =>
-    `Incorrect enum value casing. Expected: ${expected}. Actual: ${actual}.`;
+    `Incorrect enum name. Expected: ${expected}. Actual: ${actual}.`;
 
   public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
-    return this.applyWithWalker(new EnumValueNameWalker(sourceFile, this.getOptions()));
+    return this.applyWithWalker(new EnumNameWalker(sourceFile, this.getOptions()));
   }
 }

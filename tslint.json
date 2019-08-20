@@ -1,9 +1,9 @@
 {
   "rulesDirectory": ["./src"],
   "linterOptions": {
-    "exclude": ["./src/enumValueNameRule.ts"]
+    "exclude": ["./src/enumDeclarationNameRule.ts"]
   },
   "rules": {
-    "enum-value-name": "true"
+    "tslint-enum-force-capital-e": "true"
   }
 }

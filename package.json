@@ -1,11 +1,11 @@
 {
-  "name": "tslint-enum-value-name-rule",
+  "name": "tslint-enum-force-capital-e",
   "version": "0.0.6",
-  "description": "TSLint rule to enforce PascalCasing in enum values",
+  "description": "TSLint rule to enforce a capital e at the start of enum variable names",
   "main": "src/index.json",
   "files": [
     "src/index.json",
-    "src/enumValueNameRule.js"
+    "src/enumDeclarationNameRule.js"
   ],
   "keywords": [
     "typescript",
@@ -14,13 +14,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DCzajkowski/tslint-enum-value-name-rule.git"
+    "url": "git+https://github.com/curv-labs/tslint-enum-value-name-rule.git"
   },
-  "author": "Dariusz Czajkowski",
+  "author": "Salim",
   "license": "MIT",
   "dependencies": {
-    "lodash.camelcase": "^4.3.0",
-    "lodash.upperfirst": "^4.3.1",
     "tslint": "^5.0.0"
   },
   "devDependencies": {
