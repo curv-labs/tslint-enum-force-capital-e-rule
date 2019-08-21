@@ -13,7 +13,7 @@ In `tslint.json` config
 ```json
 {
   "extends": [
-    "tslint-enum-force-capital-e-rule"
+    "@curv-labs/tslint-enum-force-capital-e"
   ],
   "rules": {
     "enum-force-capital-e": true
