@@ -1,11 +1,11 @@
-# tslint-enum-value-name-rule
+# tslint-enum-force-capital-e-rule
 
-It is a TSLint rule to enforce PascalCasing in enum names.
+It is a TSLint rule to enforce a capital e at the start of enum declarations.
 
 ## Installation
 
 ```bash
-npm i -D tslint-enum-value-name-rule
+npm i -D tslint-enum-force-capital-e-rule
 ```
 
 In `tslint.json` config
@@ -13,10 +13,10 @@ In `tslint.json` config
 ```json
 {
   "extends": [
-    "tslint-enum-value-name-rule"
+    "tslint-enum-force-capital-e-rule"
   ],
   "rules": {
-    "enum-value-name": true
+    "enum-force-capital-e": true
   }
 }
 ```

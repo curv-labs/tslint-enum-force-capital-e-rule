@@ -5,7 +5,7 @@
   "main": "src/index.json",
   "files": [
     "src/index.json",
-    "src/enumDeclarationNameRule.js"
+    "src/tslintEnumForceCapitalERule.js"
   ],
   "keywords": [
     "typescript",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/curv-labs/tslint-enum-value-name-rule.git"
+    "url": "git+https://github.com/curv-labs/tslint-enum-force-capital-e-rule.git"
   },
   "author": "Salim",
   "license": "MIT",
