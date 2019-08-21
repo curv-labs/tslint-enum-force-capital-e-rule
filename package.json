@@ -1,5 +1,5 @@
 {
-  "name": "tslint-enum-force-capital-e",
+  "name": "@curv-labs/tslint-enum-force-capital-e",
   "version": "0.0.6",
   "description": "TSLint rule to enforce a capital e at the start of enum variable names",
   "main": "src/index.json",
@@ -24,5 +24,12 @@
   "devDependencies": {
     "@types/node": "^12.6.2",
     "typescript": "^3.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/curv-labs/tslint-enum-force-capital-e-rule/issues"
+  },
+  "homepage": "https://github.com/curv-labs/tslint-enum-force-capital-e-rule#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
